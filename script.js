@@ -2,7 +2,7 @@ const API_KEY = "de19526806414c23a3d100f59e2f1b95";//1d3a0eefa97b499d8fbc4ee93ee
 const url = "https://newsapi.org/v2/everything?q=";
 
 window.addEventListener("load", () => fetchNews("India"));
-
+//reload the page
 function reload() {
     window.location.reload();
 }
@@ -46,7 +46,6 @@ function bindData(articles) {
     displayErrorMessage('Failed to display news. Please try again later.');
   }
 }
-
 function fillDataInCard(cardClone, article) {
   try {
     const newsImg = cardClone.querySelector("#news-img");
@@ -76,7 +75,7 @@ function fillDataInCard(cardClone, article) {
     displayErrorMessage('Failed to display news. Please try again later.');
   }
 }
-
+//error-handling
 function displayErrorMessage(message) {
   const errorMessageElement = document.getElementById('error-message');
   if (errorMessageElement) {
@@ -106,7 +105,7 @@ searchButton.addEventListener("click", () => {
   curSelectedNav?.classList.remove("active");
   curSelectedNav = null;
 });
-
+//added enter key in event
 searchText.addEventListener("keypress", (e) => {
   if (e.key === "Enter") {
     const query = searchText.value;
