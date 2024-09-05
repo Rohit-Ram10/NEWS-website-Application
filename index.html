@@ -10,6 +10,7 @@
 <body>
 
     <nav>
+        <!--image insertion and navigation bar-->
         <div class="main-nav container flex">
             <a href="#" onclick="reload()" class="company-logo">
                 <img src="./assets/logo.jpg" alt="company logo">
@@ -24,6 +25,7 @@
                     <li class="hover-link nav-item" id="Foreign-Affairs" onclick="onNavItemClick('Foreign-Affairs')">Foreign-Affairs</li>
                 </ul>
             </div>
+            <!--Search Bar-->
             <div class="search-bar flex">
                 <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
                 <button id="search-button" class="search-button">Search</button>
@@ -31,14 +33,17 @@
         </div>
     </nav>
     <main>
+        <!--Containers for news-->
         <div class="cards-container container flex" id="cards-container"> 
         </div>
     </main>
     <template id="template-news-card">
         <div class="card">
+            <!--images-->
             <div class="card-header">
                 <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
             </div>
+            <!--content of news-->
             <div class="card-content">
                 <h3 id="news-title">This is the Title</h3>
                 <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
