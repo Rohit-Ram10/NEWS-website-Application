@@ -1,4 +1,4 @@
-#News Website Application-
+# News Website Application-
 
 A responsive News Web Application that fetches and displays the latest news articles using the NewsAPI. Users can browse news by categories or search for topics of interest with a simple interface.
 
